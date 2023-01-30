@@ -11,7 +11,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="MIT MAS.S63!" />
   <meta property="og:description" content="Disussing Generative AI for Constructive Communications" />
-  <meta property="og:url" content="http://www.mit.edu/~mas.s68/" />
+  <meta property="og:url" content="https://www.mit.edu/~mas.s68/" />
 
 
   <title>MIT MAS.S68 | Generative AI for Constructive Communication</title>
@@ -21,14 +21,6 @@
 
   <!-- Google fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MQGJWPF');</script>
-  <!-- End Google Tag Manager -->
 
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -125,13 +117,6 @@
       <h3>Instructors</h3>
 
       <div class="instructor">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.ccc.mit.edu/person/doug-beeferman/">
-        <div class="instructorphoto"><img src="images/Doug.jpeg"></div>
-        <div>Doug Beeferman</div>
-        </a>
-      </div>
-
-      <div class="instructor">
         <a target = "_blank" rel="noopener noreferrer" href="https://www.mit.edu/~jkabbara/">
         <div class="instructorphoto"><img src="images/Jad.jpeg"></div>
         <div>Jad Kabbara</div>
@@ -163,6 +148,13 @@
         <a target = "_blank" rel="noopener noreferrer" href="https://www.ccc.mit.edu/person/hope-schroeder/">
         <div class="instructorphoto"><img src="images/Hope.jpeg"></div>
         <div>Hope Schroeder</div>
+        </a>
+      </div>
+
+      <div class="instructor">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.ccc.mit.edu/person/doug-beeferman/">
+        <div class="instructorphoto"><img src="images/Doug.jpeg"></div>
+        <div>Doug Beeferman</div>
         </a>
       </div>
     
@@ -207,39 +199,48 @@
   <tbody>
   <tr>
     <td>Feb 8</td>
-    <td>Introduction to Transformers<br>
-      Speaker:
-      <i>
-        <a href="https://scholar.google.com/citations?user=l8WuQJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><strong>Andrej Karpathy</strong></a>
-      </i>
+    <td><b>Part 1: Lecture</b>
+    <ol>
+      <li>Introduction and motivation
+      <li>Class structure and logistics
+      <li>Language modeling overview
+	<ol>
+	  <li>Definitions and fundamentals</li>
+	  <li>A brief history of LMs in general</li>
+	  <li>LLM concepts</li>
+	</ol>
+      <li>Overview of ways to train, tune, and prompt LLMs
+	<ol>
+	  <li>Fine-tuning, zero-shot prompts, few-shot prompts, chain-of-thought prompts</li>
+	  <li>Prompt tuning
+	</ol>
+      <li>Examples of LLM prompts</li>
+    </ol>
+    <b>Part 2: Interactive workshop</b>
     </td>
     <td>
       Recommended Readings:
       <ol>
-        <li><a href="https://arxiv.org/abs/1706.03762.pdf">Attention Is All You Need</a></li>
-        <li><a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a></li>
-        <li><a href="http://nlp.seas.harvard.edu/annotated-transformer/"> The Annotated Transformer</a> </li>
+	<li><a href="https://stanford-cs324.github.io/winter2022/lectures/introduction/">Percy Liang's introduction to LLMs</a>
       </ol>
 
       Additional Readings:
-      <ol>
+	<ol>
+	  <li><a href="https://openai.com/blog/chatgpt/" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
+          <li><a href="https://openai.com/blog/instruction-following/" target="_blank" rel="noopener noreferrer">InstructGPT</a></li>
+          <li><a href="https://arxiv.org/abs/2005.14165" target="_blank" rel="noopener noreferrer">Language Models are Few-Shot Learners (GPT-3)</a></li>
       </ol>
     </td>
   </tr>
 
   <tr>
     <td>Feb 15</td>
-    <td>
-      Language and Human Alignment<br>
-      Speaker:
-      <i><a href="https://scholar.google.com/citations?hl=en&user=beiWcokAAAAJ" target="_blank" rel="noopener noreferrer"><strong>Jan Leike</strong> (OpenAI)</a></i>
+    <td>Applications: LLMs in systems
     </td>
     <td>
       Recommended Readings:
       <ol>
-        <li><a href="https://openai.com/blog/chatgpt/" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
-        <li><a href="https://openai.com/blog/instruction-following/" target="_blank" rel="noopener noreferrer">InstructGPT</a></li>
-        <li><a href="https://arxiv.org/abs/2005.14165" target="_blank" rel="noopener noreferrer">Language Models are Few-Shot Learners (GPT-3)</a></li>
+
       </ol>
 
       Additional Readings:
@@ -252,7 +253,7 @@
     <td>Feb 22</td>
     <td>
       Emergent Abilities and Scaling in LLMs<br>
-      Speaker: <i><a href="https://scholar.google.com/citations?user=wA5TK_0AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><strong>Jason Wei</strong> (Google Brain)</a></i>
+<!--      Speaker: <i><a href="https://scholar.google.com/citations?user=wA5TK_0AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><strong>Jason Wei</strong> (Google Brain)</a></i> -->
     </td>
     <td>
       Recommended Readings:
@@ -270,11 +271,7 @@
 
   <tr>
     <td>Mar 1</td>
-    <td>
-      Strategic Games<br>
-      Speaker:
-            <i><a href="https://scholar.google.com/citations?hl=en&user=RLDbLcUAAAAJ" target="_blank" rel="noopener noreferrer"><strong>Noam Brown</strong> (FAIR)</a></i>
-    </td>
+    <td>Evaluating models</td>
     <td>
       Recommended Readings:
       <ol>
@@ -291,11 +288,7 @@
 
   <tr>
     <td>Mar 8</td>
-    <td>
-      Robotics and Imitation Learning<br>
-      Speaker:
-      <i><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Ted Xiao</strong> (Google Brain)</a></i>
-    </td>
+    <td>Evaluating human-model interactions</td>
     <td>
       Recommended Readings:
       <ol>
@@ -313,10 +306,7 @@
   <tr>
     <td>Mar 15</td>
     <td>
-      Common Sense Reasoning<br>
-      Speaker:
-            <i><a href="https://scholar.google.com/citations?user=vhP-tlcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><strong>Yejin Choi</strong> (U. Washington / Allen Institute for AI)</a></i>
-    </td>
+      Evaluating social-level impacts</td>
     <td>
       Recommended Readings:
       <ol>
@@ -333,18 +323,14 @@
 
   <tr>
     <td>Mar 22</td>
-    <td>
-<!--      Reasoning and Emergence in LLMs<br>-->
-<!--      Speaker: <i><a href="https://scholar.google.com/citations?user=wA5TK_0AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><strong>Jason Wei</strong> (Google Brain)</a></i>-->
-      TBA
-    </td>
+    <td>Using LLMs for Social Science Research:  Analysis</td>
     <td>
       Recommended Readings:
-<!--      <ol>-->
-<!--                <li><a href="https://arxiv.org/abs/2206.07682" target="_blank" rel="noopener noreferrer">Emergent Abilities of Large Language Models</a></li>-->
-<!--                <li><a href="https://arxiv.org/abs/2201.11903" target="_blank" rel="noopener noreferrer">Chain of Thought Prompting Elicits Reasoning in Large Language Models</a></li>-->
-<!--                <li><a href="https://arxiv.org/abs/2109.01652" target="_blank" rel="noopener noreferrer">Finetuned Language Models Are Zero-Shot Learners</a></li>-->
-<!--      </ol>-->
+      <ol>
+        <!--        <li><a href="https://arxiv.org/abs/2212.06817" target="_blank" rel="noopener noreferrer">RT-1: Robotics Transformer for Real-World Control at Scale</a></li>-->
+        <!--        <li><a href="https://arxiv.org/abs/2204.01691" target="_blank" rel="noopener noreferrer">Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</a></li>-->
+        <!--        <li><a href="https://arxiv.org/abs/2207.05608" target="_blank" rel="noopener noreferrer">Inner Monologue: Embodied Reasoning through Planning with Language Models</a></li>-->
+      </ol>
 
       Additional Readings:
       <ol>
@@ -354,33 +340,14 @@
 
   <tr>
     <td>Mar 29</td>
+    <td>Break</td>
     <td>
-      In-Context Learning & Faithful Reasoning<br>
-      Speakers:
-            <i><a href="https://scholar.google.com/citations?user=bXOt49QAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><strong>Stephanie Chan</strong> (DeepMind)</a></i>
-            & <i><a href="https://scholar.google.com/citations?user=faiFBhoAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><strong>Antonia Creswell</strong> (DeepMind)</a></i>
-    </td>
-    <td>
-      Recommended Readings:
-      <ol>
-                <li><a href="https://arxiv.org/abs/2205.05055" target="_blank" rel="noopener noreferrer">Data Distributional Properties Drive Emergent In-Context Learning in Transformers</a></li>
-                <li><a href="https://arxiv.org/abs/2208.14271" target="_blank" rel="noopener noreferrer">Faithful Reasoning Using Large Language Models</a></li>
-                <li><a href="https://arxiv.org/abs/2207.07051" target="_blank" rel="noopener noreferrer">Language models show human-like content effects on reasoning</a></li>
-      </ol>
-
-      Additional Readings:
-      <ol>
-      </ol>
     </td>
   </tr>
-
+  
   <tr>
     <td>Apr 5</td>
-    <td>
-      Neuroscience<br>
-      Speaker: TBA
-      <!--      <i><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Ted Xiao</strong> (Google Brain)</a></i>-->
-    </td>
+    <td>Using LLMs for Social Science Research:  Interventions, part 1</td>
     <td>
       Recommended Readings:
       <ol>
@@ -394,14 +361,11 @@
       </ol>
     </td>
   </tr>
+
 
   <tr>
     <td>Apr 12</td>
-    <td>
-      Wrap Up<br>
-      Speaker: TBA
-      <!--      <i><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Ted Xiao</strong> (Google Brain)</a></i>-->
-    </td>
+    <td>Using LLMs for Social Science Research:  Interventions, part 2</td>    
     <td>
       Recommended Readings:
       <ol>
@@ -415,15 +379,10 @@
       </ol>
     </td>
   </tr>
-
 
   <tr>
     <td>Apr 19</td>
-    <td>
-      Wrap Up<br>
-      Speaker: TBA
-      <!--      <i><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Ted Xiao</strong> (Google Brain)</a></i>-->
-    </td>
+    <td>Political implications, transparency, and risks</td>
     <td>
       Recommended Readings:
       <ol>
@@ -439,12 +398,8 @@
   </tr>
 
   <tr>
-    <td>Apr 26</td>
-    <td>
-      Wrap Up<br>
-      Speaker: TBA
-      <!--      <i><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Ted Xiao</strong> (Google Brain)</a></i>-->
-    </td>
+    <td>April 26</td>
+    <td>Human-AI collaboration</td>
     <td>
       Recommended Readings:
       <ol>
@@ -461,46 +416,39 @@
 
   <tr>
     <td>May 3</td>
+    <td>Open Topics</td>
     <td>
-      Wrap Up<br>
-      Speaker: TBA
-      <!--      <i><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Ted Xiao</strong> (Google Brain)</a></i>-->
-    </td>
-    <td>
-      Recommended Readings:
       <ol>
-        <!--        <li><a href="https://arxiv.org/abs/2212.06817" target="_blank" rel="noopener noreferrer">RT-1: Robotics Transformer for Real-World Control at Scale</a></li>-->
-        <!--        <li><a href="https://arxiv.org/abs/2204.01691" target="_blank" rel="noopener noreferrer">Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</a></li>-->
-        <!--        <li><a href="https://arxiv.org/abs/2207.05608" target="_blank" rel="noopener noreferrer">Inner Monologue: Embodied Reasoning through Planning with Language Models</a></li>-->
       </ol>
-
-      Additional Readings:
       <ol>
       </ol>
     </td>
   </tr>
+
 
   <tr>
     <td>May 10</td>
+    <td>Final project presentations</td>
     <td>
-      Wrap Up<br>
-      Speaker: TBA
-      <!--      <i><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Ted Xiao</strong> (Google Brain)</a></i>-->
-    </td>
-    <td>
-      Recommended Readings:
       <ol>
-        <!--        <li><a href="https://arxiv.org/abs/2212.06817" target="_blank" rel="noopener noreferrer">RT-1: Robotics Transformer for Real-World Control at Scale</a></li>-->
-        <!--        <li><a href="https://arxiv.org/abs/2204.01691" target="_blank" rel="noopener noreferrer">Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</a></li>-->
-        <!--        <li><a href="https://arxiv.org/abs/2207.05608" target="_blank" rel="noopener noreferrer">Inner Monologue: Embodied Reasoning through Planning with Language Models</a></li>-->
       </ol>
-
-      Additional Readings:
       <ol>
       </ol>
     </td>
   </tr>
 
+
+  <tr>
+    <td>May 17</td>
+    <td>Final project presentations</td>
+    <td>
+      <ol>
+      </ol>
+      <ol>
+      </ol>
+    </td>
+  </tr>
+  
   </tbody>
 </table>
 </div>
